@@ -180,25 +180,25 @@
     <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionExample">
       <div class="accordion-body">
           <strong>Abstract: </strong> Arrhythmia detection using the Electrocardiogram(ECG) data is performed
-through training machine learning models like Logistic Regression and a custom
-made Deep learning network.Arrhythmia is an abnormality in heartbeat.This is
-diagnosed by readings taken from EKG,event monitor ,echocardiogram and
-implantable loop recorder.The data used for this project is from MIT-BIH
-arrhythmia database.There are 109446 samples with a sampling frequency of
-125 Hz, also five categories of classes are considered.The classes under the
-study include, i)Normal beat ii) Supraventricular premature beat, iii)Premature
-ventricular contraction, iv)Fusion of ventricular and normal beat, v)Unclassifiable
-beat.First the signal is preprocessed to normalize data and then logistic
-regression model is applied on the data,as the data is imbalanced, accuracy
-metric was not able to provide accurate results.Adding nonlinearities to the
-output of logistic regression,an accuracy of 91% was achievable.After that a
-custom made neural network was used to achieve a test accuracy of 95.2% with
-a AUC score( measures the total area underneath the ROC curve) of 0.99. After
-completion of the model, testing is done on the unseen data in order to quantify
-the amount of generalization of the model on the data. The accuracy obtained
-was the same.Also the time consumed for the diagnosis is only seconds.Hence,
-this simple machine learning method allows a fast retraining of the classifier if
-new ECG data become available.
+                  through training machine learning models like Logistic Regression and a custom
+                  made Deep learning network.Arrhythmia is an abnormality in heartbeat.This is
+                  diagnosed by readings taken from EKG,event monitor ,echocardiogram and
+                  implantable loop recorder.The data used for this project is from MIT-BIH
+                  arrhythmia database.There are 109446 samples with a sampling frequency of
+                  125 Hz, also five categories of classes are considered.The classes under the
+                  study include, i)Normal beat ii) Supraventricular premature beat, iii)Premature
+                  ventricular contraction, iv)Fusion of ventricular and normal beat, v)Unclassifiable
+                  beat.First the signal is preprocessed to normalize data and then logistic
+                  regression model is applied on the data,as the data is imbalanced, accuracy
+                  metric was not able to provide accurate results.Adding nonlinearities to the
+                  output of logistic regression,an accuracy of 91% was achievable.After that a
+                  custom made neural network was used to achieve a test accuracy of 95.2% with
+                  a AUC score( measures the total area underneath the ROC curve) of 0.99. After
+                  completion of the model, testing is done on the unseen data in order to quantify
+                  the amount of generalization of the model on the data. The accuracy obtained
+                  was the same.Also the time consumed for the diagnosis is only seconds.Hence,
+                  this simple machine learning method allows a fast retraining of the classifier if
+                  new ECG data become available.
           <div class="collapse d-flex justify-content-between mt-4">
             <a href="https://www.dropbox.com/s/60x7zlmfx9v09tm/BSP%20Presentation.pdf?dl=0" class="btn btn-outline-secondary btn-sm ml-2 mb-2" target="_blank">
               Slides
@@ -210,6 +210,76 @@ new ECG data become available.
       </div>
     </div>
   </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading6">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
+        <h6>6. Predicting music induced emotional responses,
+        <span class="text-muted ml-2">by Yvette Espinoza</span>
+        </h6>
+      </button>
+    </h2>
+    <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+          <strong>Abstract: </strong> Music is known to evoke a range of emotional responses, and thus it can be
+                  used for some forms of therapy. In music therapy, the music is chosen to
+                  evoke a desired emotion or response, but determining which pieces to play
+                  can be challenging, requiring information on both the music and the
+                  individual. This project aimed to use a combination of the music’s acoustic
+                  properties and EEG measurements to predict music induced emotional
+                  responses. Due to time constraints the audio feature extraction was omitted,
+                  instead using 2 predefined emotions: ‘sad’ or ‘happy. The participants in the
+                  dataset were first presented with different music, labeled with the emotion,
+                  then questioned on their emotions. The measured EEG data was
+                  preprocessed, and PCA was used to reduce the data and create a classifier to
+                  predict the emotional response. The resulting classifier performed poorly,
+                  though that was expected because the acoustic features of the music were
+                  not included with the EEG data when creating the classifier.
+          <div class="collapse d-flex justify-content-between mt-4">
+            <a href="https://www.dropbox.com/s/a577ri35nxjs251/BME511_Project.pdf?dl=0" class="btn btn-outline-secondary btn-sm ml-2 mb-2" target="_blank">
+              Slides
+            </a>
+            <a href="https://www.dropbox.com/s/dvp8mdrv5uduqsp/Espinoza_Project.mp4?dl=0" class="btn btn-outline-secondary btn-sm mr-2 mb-2" target="_blank">
+              Video
+            </a>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading7">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="true" aria-controls="collapse7">
+        <h6>7. Musical pitch and EEG signals,
+        <span class="text-muted ml-2">by Trey Bosfield</span>
+        </h6>
+      </button>
+    </h2>
+    <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+          <strong>Abstract: </strong> Perfect pitch is the rare ability to recognize a note without a reference; relative pitch is the ability to recognize the difference between two or more pitches. Musicians throughout their lifetime
+          (those with and without perfect pitch) train their relative pitch, as it helps with harmony, melody,
+          and so many more fundamental and advanced concepts that makes music sound the way it
+          does. The part of the brain that is responsible for understanding and processing pitch is the
+          auditory cortex. The question arose on whether or not it’s possible to compare musicians'
+          relative pitch against each other through the use of EEG signals. Experimental eeg raw data
+          was taken from Goldman et al. paper on improvisation effect on categorizing musical structures.
+          The EEG data of two random subjects in the experiment were preprocessed and compared.
+          The results showed that while it was possible to visualize which subject had the better relative
+          pitch, it was determined that a classification approach (like AUC or PCA) would be better to
+          more easily visualize how good someone’s relative pitch is using EEG data.
+          <div class="collapse d-flex justify-content-between mt-4">
+            <a href="https://www.dropbox.com/s/wyn73l7098mbc9g/Bme%20511%20prsentation%20pdf%20slides.pdf?dl=0" class="btn btn-outline-secondary btn-sm ml-2 mb-2" target="_blank">
+              Slides
+            </a>
+            <a href="https://www.dropbox.com/s/s69yy5vdxi9clrz/BME%20511%20final%20project.m4v?dl=0" class="btn btn-outline-secondary btn-sm mr-2 mb-2" target="_blank">
+              Video
+            </a>
+          </div>
+      </div>
+    </div>
+  </div>
+
 
   </main>
   <footer class="pt-4 mt-4  pb-4 text-muted border-top container">
