@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" type="text/css" href="static/css/main.css">
+  <!-- Requesting google and other search engine to not index these pages -->
+  <meta name="robots" content="noindex">
+
+  <!-- Favicon issues -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/ico/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="static/ico/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="static/ico/favicon-16x16.png">
+  <link rel="manifest" href="static/ico/site.webmanifest">
+
+  <title>Biomedical Signal Processing</title>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <div class="container">
+
+      <a class="navbar-brand" href="#">
+        <img src="static/images/BME511logo.png" width="48" alt="BME 511">
+        Biomedical Signal Processing
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+                  <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/haribharadwaj/syllabi/blob/main/PurdueBME511_BiomedSigProc.md" target="_blank">Syllabus</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/haribharadwaj/syllabi/blob/main/BME511_FinalProjectProposalGuidelines.md" target="_blank">ProjectSpecs</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+  <img src="static/images/PurdueGateway.jpg" class="img-fluid" alt="Welcome !">
+
+  <!-- Page Content -->
+  <main role="main" class="container">
+  <h1 class="mt-4">Final Project Showcase</h1>
+  <p>  Welcome to the <strong>Final Project Showcase</strong> page for the Fall 2021 edition of <strong>BME 511 Biomedical Signal Processing</strong>, at the <a href="http://engineering.purdue.edu/BME"> Weldon School of Biomedical Engineering </a> at <a href="http://www.purdue.edu/"> Purdue University</a>. BME 511 is a biomedical "data-science" course covering the application of signal processing and stochastic methods to biomedical signals and systems. While orientation to biomedical data is key to this course, the tools and concepts covered provide foundational skills that are useful in many domains. This course is distinct from other classic offerings in ECE/MA/STAT in at least three ways:
+  <ol>
+      <li> Relevant theory in signal processing and statistical methods is covered as needed, but a major focus is on implementation/application of the fundamental techniques to real-world biomedical signals. </li>
+      <li> Statistical methods that are typically taught with a "univariate" perspective are expanded to topologically organized high-dimensional data such as time-series and images, and done so motivated by the needs in biomedical applications (e.g., electrophysiology, neuroimaging). </li>
+      <li> This course uses practical applications to integrate probabilistic methods (e.g., estimation, detection, filtering) with classic linear-algebraic tools (such as Fourier/wavelet transforms). These foundational areas are often introduced in separate courses, but are powerful when brought together.</li>
+  </ol>
+  A "hands-on" approach is taken throughout the course via application-oriented problem sets. The course also includes a pre-defined <a href="https://nbviewer.org/github/haribharadwaj/notebooks/blob/main/BME511/MidtermProject.ipynb" target="_blank">midterm project (brain-computer interface)</a>, and a self-selected final project (last 5 weeks). One important goal of the final project is to gain <i>independent</i> experience applying the tools/concepts to a real-world application of each student's interest. For more information about the overall course, please see the <a href="https://github.com/haribharadwaj/syllabi/blob/main/PurdueBME511_BiomedSigProc.md" target="_blank">syllabus</a>.  For more details about the project, please see the <a href="https://github.com/haribharadwaj/syllabi/blob/main/BME511_FinalProjectProposalGuidelines.md" target="_blank">project proposal specifications.</a> Student final projects are showcased below, in no particular order.
+  </p>
+
+  <h2 class="mt-4">List of projects <span class="text-muted">(Click each to expand)</span></h2>
+  <div class="accordion" id="accordionExample">
+
+  <div class="accordion-item">
+  <h2 class="accordion-header" id="heading3">
+    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+      <h6>1. A non-invasive method for evaluating olfactory bulb dysfunction: proof-of-concept for Parkinson’s Disease diagnostics,
+      <span class="text-muted ml-2">by Jessica Baer</span>
+      </h6>
+    </button>
+  </h2>
+  <div id="collapse3" class="accordion-collapse collapse show" aria-labelledby="heading3" data-bs-parent="#accordionExample">
+    <div class="accordion-body">
+        <strong>Abstract: </strong> Parkinson’s Disease affects nearly every part of the body as this neurodegenerative disease causes neurons producing the neurotransmitter dopamine to gradually die off, reducing communication levels within the brain. Early, noninvasive diagnostic methods for Parkinson’s Disease (PD) are needed to better manage symptoms and potentially slow disease progression long-term. A recent study by Iravani et al. (2021) shows the potential for using noninvasive electrodes to monitor the common early symptom of olfactory bulb dysfunction and potentially diagnose PD earlier than current PD diagnostic methods that rely on motor symptoms. The objectives of this final project are to confirm the results of this study by identifying features in the electrode recordings that accurately distinguish between PD patients and healthy controls, developing a logistic regression model that uses these features to differentiate between PD patients and healthy controls with reasonable accuracy, and evaluate the correlation between the identified features and disease progression descriptors. To achieve these aims, a total of six key features were isolated from spectrogram representations of the electrode recordings and logistic and linear regression models were fit to the features and the various outcomes. Logistic models using various combinations of features were able to classify the subjects as PD patients and controls with ~95% accuracy. Key features also appeared to be correlated with the three disease progression descriptors that were evaluated.
+        <div class="collapse d-flex justify-content-between mt-4">
+          <a href="https://www.dropbox.com/s/zjs0lmycmctphla/A%20non-invasive%20method%20for%20evaluating%20olfactory%20bulb%20dysfunction_Presentation.pdf?dl=0" class="btn btn-outline-secondary btn-sm ml-2 mb-2" target="_blank">
+            Slides
+          </a>
+          <a href="https://www.dropbox.com/s/t3idhzl4h4a0mpj/A%20non-invasive%20method%20for%20evaluating%20olfactory%20bulb%20dysfunction_Transcript.pdf?dl=0" class="btn btn-outline-secondary btn-sm mr-2 mb-2" target="_blank">
+            Transcript
+          </a>
+        </div>
+    </div>
+    </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading2">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+        <h6>2. Prediction of Epileptic Seizures by Spike Extraction and Rate Comparison between Interictal and Preictal States,
+        <span class="text-muted ml-2">by Katherine Foote</span>
+        </h6>
+      </button>
+    </h2>
+    <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+          <strong>Abstract: </strong> Epilepsy, estimated to affect over 50 million people worldwide, is characterized by seizures which occur with little to no advanced external warning. Epilepsy diagnosis from an EEG is generally done by experts by identifying epileptiform discharges, generally characterized as spikes, sharp waves, and other spike-wave type forms. Early detection of an imminent seizure could allow a patient to be in a safe location or possibly take fast-acting seizure preventing medicines, and thus improve their quality of life. Multiple studies have shown that these waveforms are present in increasing quantity during the time leading up to the seizure. This project develops a process to automatically extract spikes and sharp waves in interictal EEG recordings and preictal EEG recordings and count the number of occurrences, generating a smoothed spike rate per observation period. The maximum rate during interictal periods will be calculated and this will be used as a threshold. Other EEG recordings will be processed similarly and compared to the rate of the threshold (per channel). If the EEG recording has a higher rate than the threshold, it indicates that a seizure is imminent. Using this method on a dataset from a Kaggle epilepsy detection competition, the accuracy of prediction for the test subject is above 78%.
+          <div class="collapse d-flex justify-content-between mt-4">
+            <a href="https://www.dropbox.com/s/g6fnmf579f8vhbq/FinalPresentation.pdf?dl=0" class="btn btn-outline-secondary btn-sm ml-2 mb-2" target="_blank">
+              Slides
+            </a>
+            <a href="https://www.dropbox.com/s/eqm58oivn2s1goz/video1001558539.mp4?dl=0" class="btn btn-outline-secondary btn-sm mr-2 mb-2" target="_blank">
+              Video
+            </a>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading1">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+        <h6>3. Gait Phase Classification and Prediction,
+        <span class="text-muted"> by Tewbesta Alemayehu </span>
+        </h6>
+      </button>
+      
+    </h2>
+    <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+          <strong>Abstract: </strong>Gait is the manner of walking or the analysis of each step when walking. It can be used to determine if the person has abnormalities in their walking and it is important in analyzing how a person should walk if they are missing a limb. There are different phases in gait. These are separated based on time of occurrence. Each gait cycle includes two periods which are stance and swing phase. Stance phase accounts for 60% of the total time for one step and is when both feet are on the ground. Swing phase, accounts for 40% of the total step time and is when the feet is in midair. Stance phase of gait is divided into loading response, midstance, terminal stance, and pre-swing. Swing phase is divided into initial swing, mid-swing, and terminal swing. It is rare to find gait data that has classified each gait phase, although it’s important in understanding the muscular condition of a patient. In this project, one of the objectives was to preprocess EMG data by smoothing it then labelling it the corresponding gait phase associated with it. The second objective was to make predictions of how a person should walk on the other foot given the manner of walking on the right foot. The results show that a good classification was made, and the prediction had a Mean Squared Error of 25.25 and r2 score of 0.29 on a small dataset of one subject walking for less than 40 second.
+
+          <div class="collapse d-flex justify-content-between mt-4">
+            <a href="https://www.dropbox.com/s/wglo61r509oc8n4/BME%20Final%20Project%20Presentation%20Slide%20.pdf?dl=0" class="btn btn-outline-secondary btn-sm ml-2 mb-2" target="_blank">
+              Slides
+            </a> 
+            <a href="https://www.dropbox.com/s/cdoguc2zgu244gs/BME%20Final%20Project%20Presentation%20Slide%20.mp4?dl=0" class="btn btn-outline-secondary btn-sm mr-2 mb-2" target="_blank">
+              Video
+            </a>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  </main>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <script src="static/js/main.js" type="text/javascript"> </script>
+
+</body>
