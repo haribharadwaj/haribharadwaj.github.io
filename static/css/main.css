@@ -1,0 +1,41 @@
+body {
+  background: #fafafa;
+  color: #333333;
+  margin-top: 0.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #444444;
+}
+
+ul {
+  margin: 0;
+}
+
+.bg-anthracite {
+  background-color: #0d120f;
+}
+
+.bg-purduesilver{
+  background-color: #8e8981;
+}
+
+.content-section {
+  background: #ffffff;
+  padding: 10px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+pre code {
+  background-color: #eeeeee;
+  display: block;
+  padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  white-space: pre-wrap;       /* css-3 */
+  word-wrap: break-word;
+}
+
