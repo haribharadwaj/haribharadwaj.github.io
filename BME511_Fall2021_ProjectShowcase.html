@@ -141,6 +141,76 @@
     </div>
   </div>
 
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading4">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+        <h6>4. Detection of Pulse peaks from wrist Photoplethysmography (PPG) signal using simultaneous chest Electrocardiogram (ECG) signal as ground truth,
+        <span class="text-muted ml-2">by Sarwat Amin</span>
+        </h6>
+      </button>
+    </h2>
+    <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+          <strong>Abstract: </strong> PPG systems can be conveniently built-in wrist watches and rings making it increasingly popular for different applications like heart rate estimation, respiratory rate, and blood pressure estimation. In case of respiratory estimation, it is necessary to detect the pulse peaks within the PPG signal to observe Respiratory Sinus Arrythmia (increase of heart rate during inhalation and decrease during exhalation). However, PPG signal is extremely susceptible to motion artifacts which masks the pulse peaks. To get a robust detection of PPG peak detection, we have implemented and compared the results of 1) bandpass filtering 2) Wavelet decomposition 3) Normalized least mean square (NLMS) adaptive filtering and 4) Recursive least square (RLS) adaptive filtering-based approaches. The PPG signals were acquired from Samsung Galaxy Active2 watch from 28 healthy subjects and simultaneous ECG recordings were acquired from Vitalpatch ECG sensor that has been placed on the chest. The PPG and ECG signals are continuously recorded for 5-7 days, except for the time when the watch was taken off to be charged. The PPG signal is affected by motion artifact induced by a wide range of activities.
+          The evaluation of true positive detection is based on the following assumptions:
+          1. There is only one true PPG peak between two R-peaks of ECG data.
+          2. If the peak detection algorithm detects more than one PPG peaks in between two R-R intervals, the true peak is identified from R-R interval from preceding ECG cycles. The rest of the peaks are labelled as false positive detection.
+          The benchmarks of performance are the rate of true positive detections with respect to ECG. The aims for the final project are: Aim 1) reporting the TP rate for all 4 preprocessing techniques for 28 subjects, Aim 2) Lower the false positives in detected PPG peaks, i.e., increase TP rate(PPG) while maintaining a high TP rate (at least 70%) with respect to ECG in 1 subject. The results as of now show that the simplest approach, i.e., bandpass filtering based approach has the best performance with an average TP rate of 53% and TP rate(PPG) of 86%. The reduction of false positive detections using outlier elimination approach did not however work as expected.
+          It resulted in an increase in TP rate(PPG) in 2 out of 4 cases but reduced the TP with respect to ECG in all cases. Interestingly, if we modified the peak detection to remove cubing of segments and select appropriate threshold to select outliers, it is possible to get an increase of TP to 62%. So, we have succeeded in fulfilling both the aims of the project.
+          <div class="collapse d-flex justify-content-between mt-4">
+            <a href="https://www.dropbox.com/s/a4m3uw6o1bbutbc/Final%20Project%20Slide%20deck%20vf.pdf?dl=0" class="btn btn-outline-secondary btn-sm ml-2 mb-2" target="_blank">
+              Slides
+            </a>
+            <a href="https://www.dropbox.com/s/mlvuxj67bizb3rs/Transcript%20vf.pdf?dl=0" class="btn btn-outline-secondary btn-sm mr-2 mb-2" target="_blank">
+              Transcript
+            </a>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading5">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+        <h6>5. Arrhythmia Detection using Electrocardiogram,
+        <span class="text-muted ml-2">by Rithu Varshini Annadurai</span>
+        </h6>
+      </button>
+    </h2>
+    <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+          <strong>Abstract: </strong> Arrhythmia detection using the Electrocardiogram(ECG) data is performed
+through training machine learning models like Logistic Regression and a custom
+made Deep learning network.Arrhythmia is an abnormality in heartbeat.This is
+diagnosed by readings taken from EKG,event monitor ,echocardiogram and
+implantable loop recorder.The data used for this project is from MIT-BIH
+arrhythmia database.There are 109446 samples with a sampling frequency of
+125 Hz, also five categories of classes are considered.The classes under the
+study include, i)Normal beat ii) Supraventricular premature beat, iii)Premature
+ventricular contraction, iv)Fusion of ventricular and normal beat, v)Unclassifiable
+beat.First the signal is preprocessed to normalize data and then logistic
+regression model is applied on the data,as the data is imbalanced, accuracy
+metric was not able to provide accurate results.Adding nonlinearities to the
+output of logistic regression,an accuracy of 91% was achievable.After that a
+custom made neural network was used to achieve a test accuracy of 95.2% with
+a AUC score( measures the total area underneath the ROC curve) of 0.99. After
+completion of the model, testing is done on the unseen data in order to quantify
+the amount of generalization of the model on the data. The accuracy obtained
+was the same.Also the time consumed for the diagnosis is only seconds.Hence,
+this simple machine learning method allows a fast retraining of the classifier if
+new ECG data become available.
+          <div class="collapse d-flex justify-content-between mt-4">
+            <a href="https://www.dropbox.com/s/60x7zlmfx9v09tm/BSP%20Presentation.pdf?dl=0" class="btn btn-outline-secondary btn-sm ml-2 mb-2" target="_blank">
+              Slides
+            </a>
+            <a href="https://www.dropbox.com/s/oob1fkh1hihs2jo/BSP%20Final%20Presentation.mov?dl=0" class="btn btn-outline-secondary btn-sm mr-2 mb-2" target="_blank">
+              Video
+            </a>
+          </div>
+      </div>
+    </div>
+  </div>
+
   </main>
   <footer class="pt-4 mt-4  pb-4 text-muted border-top container">
     Created using <a href="https://docs.getpelican.com/en/latest/" target="_blank">Pelican</a> and styled using <a href="https://getbootstrap.com/" target="_blank">Bootstrap 5</a>. &copy;2021 Hari Bharadwaj and students of BME 511. All Rights Reserved.
