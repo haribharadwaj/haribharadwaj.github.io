@@ -385,6 +385,29 @@
     </div>
   </div>
 
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading12">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+        <h6>12. A deep learning framework to remove endogenic artifacts from EEG signals,
+        <span class="text-muted ml-2">by Yuqing Huang</span>
+        </h6>
+      </button>
+    </h2>
+    <div id="collapse12" class="accordion-collapse collapse" aria-labelledby="heading12" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+          <strong>Abstract: </strong> Since endogenic artifacts, such as electrooculogram (EOG) and electromyography (EMG), always contaminate EEG signal, a deep learning framework is proposed to separate EEG signal and endogenic artifacts in the embedding space and reconstruct the denoised signal later. The framework is named DeepSeparator. DeepSeparator employs an encoder to extract and amplify the features in the raw EEG, a module called decomposer to extract the trend, detect and suppress artifact and a decoder to reconstruct the denoised signal. In this project, a set of pure EEG is set as ground truth. Then mix this set of signal with EOG and EMG signals as input. After the process of DeepSeparator, comparing the output with ground truth to show how well the deep learning framework works. Compared with traditional methods, DeepSeparator does not rely on any prior assumptions, and can extract clean EEG.
+          <div class="collapse d-flex justify-content-between mt-4">
+            <a href="https://www.dropbox.com/s/qqy2z9ieu6oynnz/final.pdf?dl=0" class="btn btn-outline-secondary btn-sm ml-2 mb-2" target="_blank">
+              Slides
+            </a>
+            <a href="https://www.dropbox.com/s/cn48vfuknqbgwmc/YuqingHuangFinalPre.mp4?dl=0" class="btn btn-outline-secondary btn-sm mr-2 mb-2" target="_blank">
+              Video
+            </a>
+          </div>
+      </div>
+    </div>
+  </div>
+
   </main>
   <footer class="pt-4 mt-4  pb-4 text-muted border-top container">
     Created using <a href="https://docs.getpelican.com/en/latest/" target="_blank">Pelican</a> and styled using <a href="https://getbootstrap.com/" target="_blank">Bootstrap 5</a>. &copy;2021 Students and instructors of BME 511. All Rights Reserved.
