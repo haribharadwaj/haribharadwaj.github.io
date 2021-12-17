@@ -65,7 +65,7 @@
       <li> Statistical methods that are typically taught with a "univariate" perspective are expanded to topologically organized high-dimensional data such as time-series and images, and done so motivated by the needs in biomedical applications (e.g., electrophysiology, neuroimaging). </li>
       <li> This course uses practical applications to integrate probabilistic methods (e.g., estimation, detection, filtering) with classic linear-algebraic tools (e.g., Fourier/wavelet transforms, PCA, noise cancellation/regression). These foundational areas are often introduced in separate courses, but are powerful when brought together.</li>
   </ol>
-  A "hands-on" approach is taken throughout the course via application-oriented problem sets. The course also includes a pre-defined <a href="https://nbviewer.org/github/haribharadwaj/notebooks/blob/main/BME511/MidtermProject.ipynb" target="_blank">midterm project (brain-computer interface)</a>, and a self-selected final project (last 5 weeks). One important goal of the final project is to gain <i>independent</i> experience applying the tools/concepts to a real-world application of each student's interest. For more information about the overall course, please see the <a href="https://github.com/haribharadwaj/syllabi/blob/main/PurdueBME511_BiomedSigProc.md" target="_blank">syllabus</a>.  For more details about the project, please see the <a href="https://github.com/haribharadwaj/syllabi/blob/main/BME511_FinalProjectProposalGuidelines.md" target="_blank">project proposal specifications.</a> Student final projects are showcased below with their permission.
+  A "hands-on" approach is taken throughout the course via application-oriented problem sets. The course also includes a pre-defined <a href="https://nbviewer.org/github/haribharadwaj/notebooks/blob/main/BME511/MidtermProject.ipynb" target="_blank">midterm project (brain-computer interface)</a>, and a self-selected final project (last 5 weeks). An important goal of the final project is that each student should gain <i>independent</i> experience applying the tools/concepts to a real-world application of their interest. For more information about the overall course, please see the <a href="https://github.com/haribharadwaj/syllabi/blob/main/PurdueBME511_BiomedSigProc.md" target="_blank">syllabus</a>.  For more details about the project, please see the <a href="https://github.com/haribharadwaj/syllabi/blob/main/BME511_FinalProjectProposalGuidelines.md" target="_blank">project proposal specifications.</a> Student final projects are showcased below with their permission.
   </p>
 
   <h2 class="mt-4">List of projects in no particular order <span class="text-muted">(Click each to expand)</span></h2>
@@ -407,6 +407,174 @@
       </div>
     </div>
   </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading13">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+        <h6>13. Reverse Engineering Single Cell RNA-seq Analysis,
+        <span class="text-muted ml-2">by Jonathan Huang</span>
+        </h6>
+      </button>
+    </h2>
+    <div id="collapse13" class="accordion-collapse collapse" aria-labelledby="heading13" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+          <strong>Abstract: </strong>Genomic data provides valuable insights into the development and characterization of biological and disease processes with DNA sequencing allowing the description of phenotype at the building block level and RNA sequencing giving a window to observe processes in action. Over the last decade, it has been clear that there is missing information lost in tissue heterogeneity that fails to be captured in bulk-sequencing. With the commercialization of single-cell sequencing, there has been an impressive rise in investigators exploring the subpopulations elucidated by the technology. However, the complexity introduced by this granularity requires significantly more resource intensive computational methods. Creation of these methods requires more specialization and as a result, there can be gaps in knowledge between the processing and interpretation of the large datasets. As such, although there are existing methods to process and analyze this type of data, here I seek to reverse engineer these methods to come to a better understanding of the analysis pipelines. 
+          494 cells down sampled from a single-cell RNA sequencing data from the caudate will be used through this analysis.
+          First a filtering step is necessary due to the technical artifacts present in the sparse data. Next, dimension reduction is required to interpret scRNA data due to the inherent large number of features. After dimension reduction, a shared neighbor algorithm will be used to map the cell clusters.
+          Results compared with Seurat show that these steps successfully replicated the traditional scRNA-seq pipeline.
+
+          <div class="collapse d-flex justify-content-between mt-4">
+            <a href="https://www.dropbox.com/s/ago0he1a6vpckp3/FProjPresentation.pdf?dl=0" class="btn btn-outline-secondary btn-sm ml-2 mb-2" target="_blank">
+              Slides
+            </a>
+            <a href="https://www.dropbox.com/s/aa6kbmuqn9nmwd8/FProjPresentation.mp4?dl=0" class="btn btn-outline-secondary btn-sm mr-2 mb-2" target="_blank">
+              Video
+            </a>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading14">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
+        <h6>14. Mouse Paw Sensation and Interpretation: Responses in S1 and M1 Cortex,
+        <span class="text-muted ml-2">by Myriam Hrosz</span>
+        </h6>
+      </button>
+    </h2>
+    <div id="collapse14" class="accordion-collapse collapse" aria-labelledby="heading14" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+          <strong>Abstract: </strong> Animals respond to environmental changes through their perceived notion of the world. Thus, understanding how different regions of the brain communicate to effectively adapt to environmental factors is important. Genetically modified mice (GCaMP6s x CamKII-tTa) were placed on a wheel with three different textures, 40 minutes of behavioral and neural data were recorded. The initial hypothesis was that mice would prefer a smoother surface due to less neurons firing in S1. This in turn would lead to less firing in M1. After processing in DeepLabCut and Suite2p, respectively, a correlation between firing rates and different sensory stimuli was noticed. Mice had a stronger preference for 320-grit sandpaper due to smaller firing rates in S1 cortex. Goal: Determine neural preference in both M1 and S1 in relation to different sensory stimuli.
+
+          <div class="collapse d-flex justify-content-between mt-4">
+            <a href="https://www.dropbox.com/s/tibtaant4mcnodh/Final%20Presentation.pdf?dl=0" class="btn btn-outline-secondary btn-sm ml-2 mb-2" target="_blank">
+              Slides
+            </a>
+            <a href="https://www.dropbox.com/s/mc0p5omqv74m8qs/video1628527724.mp4?dl=0" class="btn btn-outline-secondary btn-sm mr-2 mb-2" target="_blank">
+              Video
+            </a>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading15">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse15" aria-expanded="false" aria-controls="collapse15">
+        <h6>15. Feasibility of Principal Component Analysis (PCA) for Non-Real Time Detection of Abnormal Heart Rhythms (Arrhythmias),
+        <span class="text-muted ml-2">by Amy Hostetler</span>
+        </h6>
+      </button>
+    </h2>
+    <div id="collapse15" class="accordion-collapse collapse" aria-labelledby="heading15" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+          <strong>Abstract: </strong> To analyze an electrocardiogram, ECG, of a patient to detect abnormal heart rhythms, an expert is needed to diagnose the patients. There is potential for signal processing to be done after an ECG is captured to classify any abnormal heart beats in the data. This project uses the Arrhythmia Database from MIT-BIH by George Moody and Roger Mark which was first distributed in 1980. This is a collection of 47 subjects with a combination of normal heart rhythms and arrhythmias. Moody’s WFDB conversion software was used to create readable ECG data. This project filtered these ECGs to pass the frequencies between 0.5 to 150 Hz based on recommendations from the American Heart Association published in 2007. The data was separated into sections of the ECGs with the same classifications of arrhythmias or normal heart rhythms. These were then dimensionally reduced using a short sample of the data which seemed to have the most difference between the arrhythmias and normal heart rhythm. These were further reduced using PCA to find the most variable components. The resulting criteria for finding specific classifications of arrhythmias show some promise of the application of these methods on other classifications of arrhythmias if the selection criteria between normal and the arrhythmia is more refined. With ventricular flutter wave, there is a 68% false detection of ventricular flutter with normal heart beats.
+          <div class="collapse d-flex justify-content-between mt-4">
+            <a href="https://www.dropbox.com/s/37htc93v2ququdm/Final%20Project%20Presentation.pdf?dl=0" class="btn btn-outline-secondary btn-sm ml-2 mb-2" target="_blank">
+              Slides
+            </a>
+            <a href="https://www.dropbox.com/s/yy2136849uqx10n/Final%20Project%20Presentation.mp4?dl=0" class="btn btn-outline-secondary btn-sm mr-2 mb-2" target="_blank">
+              Video
+            </a>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading16">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+        <h6>16. Comparison between measures of Cortical Waveforms and Inter-trial Coherence (ITC) to three different gap durations in younger and middle-aged adults,
+        <span class="text-muted ml-2">by Varsha Mysore Athreya</span>
+        </h6>
+      </button>
+    </h2>
+    <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading16" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+          <strong>Abstract: </strong> Many individuals with normal hearing thresholds have difficulty in communication in adverse listening conditions, like in noise or in reverberation. Such difficulties have been majorly documented in older adults, and individuals exposed to noise. There are several factors that aids speech perception in noise, and one of the primary contributors is precise temporal coding of the stimulus. To study temporal coding, we are using a gap detection paradigm of tones with gap durations of 16, 32 and 64 ms in younger and older adults. I have used 32-channel EEG data from 5 younger adults (18-30 years) and 1 middle-aged adult (47 years) to elicit an auditory cortical response. The signal processing techniques used to analyze the cortical response from the raw EEG data were – (1) re-referencing to the mastoid electrodes, (2) band-pass filtering (1-40 Hz), (3) Epoching the three gap durations separately by using 3 triggers, (4) Artifact rejection to remove eye blinks and other muscle-related artifacts, (5) Averaging the three different epochs and (6) Inter-trial coherence (ITC) measures using multitaper method to elucidate the extent of phase-locking for the three gap-durations (giving us a measure of cortical synchrony). I obtained the following responses from the analysis – (1) Onset cortical response to the start of the stimulus, (2) Cortical responses to the three different gap durations, and (3) ITC measures across the three gap durations. The ITC increased with increase in the gap durations, which was not evident in the cortical response waveforms.
+          <div class="collapse d-flex justify-content-between mt-4">
+            <a href="https://www.dropbox.com/s/pjvhfx7wmapt66u/BME%20511-%20Final%20Project%20%28Varsha%29.pdf?dl=0" class="btn btn-outline-secondary btn-sm ml-2 mb-2" target="_blank">
+              Slides
+            </a>
+            <a href="https://www.dropbox.com/s/yzcksayjfb9xqnb/Varsha_BME511_FinalProject_Presentation.mp4?dl=0" class="btn btn-outline-secondary btn-sm mr-2 mb-2" target="_blank">
+              Video
+            </a>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading17">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse17" aria-expanded="false" aria-controls="collapse17">
+        <h6>17. Motion Artifact Removal from EEG and fNIRS Data,
+        <span class="text-muted ml-2">by Peter Zoss</span>
+        </h6>
+      </button>
+    </h2>
+    <div id="collapse17" class="accordion-collapse collapse" aria-labelledby="heading17" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+          <strong>Abstract: </strong>The analysis of EEG and fNIRS data for the removal of motion artifacts is important because of the noise they can cause to the raw neural data. To better understand and analyze the data, it is necessary to accurately remove the motion artifacts without losing important information. This is especially true for EEG and fNIRS data where eye movement is more easily detected when recording these signals. The filtering technique I use is able to remove the motion artifacts from the raw data signals and showing what the predicted motion artifact data should look like. The theoretical motion artifact data is then obtained for comparison to the predicted motion signal from the filtered data. The similarities between the two signals are high, showing the potential this technique has.
+          <div class="collapse d-flex justify-content-between mt-4">
+            <a href="https://www.dropbox.com/s/7t13993t36hvezf/BME511_FinalPresentation_pzoss.pdf?dl=0" class="btn btn-outline-secondary btn-sm ml-2 mb-2" target="_blank">
+              Slides
+            </a>
+            <a href="https://www.dropbox.com/s/4k286ltic13kvc4/BME511_FinalPresentation_pzoss.mp4?dl=0" class="btn btn-outline-secondary btn-sm mr-2 mb-2" target="_blank">
+              Video
+            </a>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading18">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse18" aria-expanded="false" aria-controls="collapse18">
+        <h6>18. Fetal HR detection from abdominal ECG,
+        <span class="text-muted ml-2">by Damen Wilson</span>
+        </h6>
+      </button>
+    </h2>
+    <div id="collapse18" class="accordion-collapse collapse" aria-labelledby="heading18" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+          <strong>Abstract: </strong>Fetal heart rhythm arrhythmias are very dangerous, and it is crucial for a caregiver to be aware of such arrythmias for care of the mother and baby. Current solutions are not ideal for continuous monitoring and have limited use cases. By use of a NI-FECG (non-invasive fetal electrocardiogram) it is possible to separate the mother’s ECG waveforms and the fetus’s waveforms. The data set used was collected from 5 women in labor with simultaneous recording of multichannel abdominal ECG and direct inserted invasive fetal ECG (FECG) (ground truth). The main objectives of this were to separate the maternal and fetal ECGs, determine fetal R-peaks and HR, and compare these R-peak detections with the FECG’s R-peaks. First, the data was bandpass filtered and then the first principal component from PCA was used to isolate a clean maternal ECG, and ICA’s first component was used an initial estimate of NI-FECG. Next these two signals were separated using the orthogonality principle. Finally, after wavelet denoising, and 18-35Hz filtering, R-peak detection was performed on the NI-FECG estimate. The analysis pipeline had an average of 81.49% accuracy for R-peaks compared to the FECG recording, 24.00% miss rate, and a 18.35% false alarm rate in detecting false R-peaks. In conclusion, a large proportion of the R-peaks coming from the fetus were detected, but there was a sizeable portion of false and missed peaks as well. Further analysis incorporating improved peak detection and source separation could make this a viable tool in noninvasive fetal ECG monitoring. 
+          <div class="collapse d-flex justify-content-between mt-4">
+            <a href="https://www.dropbox.com/s/7hbas6tkb3ahgqf/Final%20Presentation%20-%20Fetal%20HR%20Detection%20from%20Abdominal%20ECG%20Draft.pdf?dl=0" class="btn btn-outline-secondary btn-sm ml-2 mb-2" target="_blank">
+              Slides
+            </a>
+            <a href="https://www.dropbox.com/s/0ahktb7u1bgsfsu/Final%20Presentation%20-%20Fetal%20HR%20Detection%20from%20Abdominal%20ECG%20Draft.pptx?dl=0" class="btn btn-outline-secondary btn-sm mr-2 mb-2" target="_blank">
+              Video
+            </a>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading19">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse19" aria-expanded="false" aria-controls="collapse19">
+        <h6>19. Python Analysis of ECG Signals,
+        <span class="text-muted ml-2">by Abigail Van Wormer</span>
+        </h6>
+      </button>
+    </h2>
+    <div id="collapse19" class="accordion-collapse collapse" aria-labelledby="heading19" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+          <strong>Abstract: </strong>About 1 in every 4 Americans will die from heart disease, making it the leading cause of death in the United States. Electrocardiography, or ECG, signaling is a way to capture information about the heart using electrical signals. ECGs are used to diagnose and track a patient’s heart health. In order to help physicians diagnose heart disease faster and more accurately, a python analysis of ECG signals was performed. One control dataset and one noisy dataset were provided from Paul van Gent for this project. The analysis was performed using the control dataset and included extracting the following information from the raw signal: the R-peaks and the interval in between them, the moving heart rate average, the average heart rate, and the heart rate variability features. Next, a filtering function was created to clean up the noisy ECG signal. However, the signal had prior filtering done by the device it was collected with, so the noisy signal was used to find the previously listed features. Although the filtering function was not used with the noisy dataset, it can be used in the future. Comparing the two datasets, it was found that the control data that was collected from a laying down position had much lower values than the noisy data collected while the person was moving around. This makes sense due to the nature of how the data was collected. Using the code written, physicians have the capability to use this analysis to deliver quick diagnoses of heart disease to patients.
+          <div class="collapse d-flex justify-content-between mt-4">
+            <a href="https://www.dropbox.com/s/wqtzj8jq32pd4iw/Van%20Wormer%20Final%20Presentation.pdf?dl=0" class="btn btn-outline-secondary btn-sm ml-2 mb-2" target="_blank">
+              Slides
+            </a>
+            <a href="https://www.dropbox.com/s/dn4i6whkwiuf5au/VanWormer_Presentation.mp4?dl=0" class="btn btn-outline-secondary btn-sm mr-2 mb-2" target="_blank">
+              Video
+            </a>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
 
   </main>
   <footer class="pt-4 mt-4  pb-4 text-muted border-top container">
